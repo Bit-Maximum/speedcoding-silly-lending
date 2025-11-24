@@ -1627,7 +1627,7 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar-thumb {
     background: #D1D5DB; /* Границы/иконки */
     border-radius: 4px;
-    transition: all 0.3s ease;
+    /*transition: all 0.3s ease;*/
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -1693,19 +1693,7 @@ body {
     background: #2F80ED;
 }
 
-/* Анимация для плавного появления скроллбара */
-::-webkit-scrollbar-thumb {
-    animation: fadeInScrollbar 0.5s ease-in-out;
-}
 
-@keyframes fadeInScrollbar {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 /* Стили для горизонтального скролла (если понадобится) */
 ::-webkit-scrollbar:horizontal {
@@ -2031,6 +2019,38 @@ body {
 
 /* Адаптивность */
 @media (max-width: 1024px) {
+    .container__nav {
+        padding: 0 25px;
+    }
+
+    .nav {
+        gap: 10px;
+    }
+
+    .nav_link {
+        font-size: 0.40rem;
+        padding: 3px 2px;
+    }
+
+    .header_auth {
+        gap: 5px;
+    }
+
+    .auth-btn {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .header_logo a {
+        font-size: 1.2em;
+    }
+
+    .logo-img {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+
     .hero__inner {
         gap: 40px;
     }
@@ -2070,7 +2090,6 @@ body {
         font-size: 2.2rem;
     }
 }
-
 
 
 /* Мобильная версия */
@@ -2270,6 +2289,13 @@ body {
 
     .process-description {
         font-size: 1rem;
+    }
+
+    /* Скрываем десктопные линии */
+    .steps-container::before,
+    .steps-container::after,
+    .step-card::after {
+        display: none;
     }
 
     .steps-container {

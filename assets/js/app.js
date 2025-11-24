@@ -16,14 +16,14 @@ $(function () {
         let blockId = $(this).data("scroll");
         let blockOffset = $(blockId).offset().top;
         if (blockId === "#features") {
-            blockOffset -= 70;
+            blockOffset -= 20;
         } else if (blockId === "#chapters") {
             blockOffset -= 50;
         }
 
         $("html, body").animate({
             scrollTop: blockOffset
-        }, 500);
+        }, 0);
 
         if ($(window).width() <= 770){
             let nav = $("#nav");
