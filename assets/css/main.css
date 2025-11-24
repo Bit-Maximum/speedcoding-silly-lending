@@ -472,21 +472,21 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     position: relative;
 }
-.demo::after,
-.features::before {
-    content: "";
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    min-height: 150px;
-    background-image: url(../images/demo/stal_doouble.png);
-    background-size: contain;
-    background-repeat: repeat-x;
-    background-position: top center;
-}
-.demo::after {
-    top: 98%;
-}
+/*.demo::after,*/
+/*.features::before {*/
+/*    content: "";*/
+/*    position: absolute;*/
+/*    z-index: 5;*/
+/*    width: 100%;*/
+/*    min-height: 150px;*/
+/*    background-image: url(../images/demo/stal_doouble.png);*/
+/*    background-size: contain;*/
+/*    background-repeat: repeat-x;*/
+/*    background-position: top center;*/
+/*}*/
+/*.demo::after {*/
+/*    top: 98%;*/
+/*}*/
 .screen {
     width: 300px;
     border: 3px solid rgba(var(--primary-rgb), 80%);
@@ -1569,7 +1569,7 @@ h1, h2, h3, h4, h5, h6 {
     right: -20px;
 }
 
-.card__icon {
+.floating-card__icon {
     width: 40px;
     height: 40px;
     background: #E6F0FF; /* Светлый синий */
@@ -1586,14 +1586,14 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
 }
 
-.card__subtitle {
+.floating-card__subtitle {
     font-size: 12px;
     color: #4B5563; /* Текст вторичный */
     font-weight: 500;
     margin-bottom: 2px;
 }
 
-.card__title {
+.floating-card__title {
     font-size: 14px;
     font-weight: 700;
     color: #1F2937; /* Текст основной */
@@ -1613,6 +1613,220 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* Стилизация скроллбара для Webkit браузеров (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F7FAFC; /* Фон светлый */
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #D1D5DB; /* Границы/иконки */
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2F80ED; /* Основной синий */
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #1C5FD3; /* Тёмный синий */
+}
+
+::-webkit-scrollbar-corner {
+    background: #F7FAFC; /* Фон светлый */
+}
+
+/* Стилизация скроллбара для Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #D1D5DB #F7FAFC; /* thumb track */
+}
+
+/* Дополнительные стили для плавного скролла */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Стили для выделения текста */
+::selection {
+    background: #E6F0FF; /* Светлый синий */
+    color: #1F2937; /* Текст основной */
+}
+
+::-moz-selection {
+    background: #E6F0FF; /* Светлый синий */
+    color: #1F2937; /* Текст основной */
+}
+
+/* Дополнительные стили для улучшения UX при скролле */
+body {
+    scroll-behavior: smooth;
+}
+
+/* Стили для кастомного скролла в конкретных контейнерах */
+.scroll-container {
+    scrollbar-width: thin;
+    scrollbar-color: #D1D5DB #F7FAFC;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #F7FAFC;
+    border-radius: 3px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #D1D5DB;
+    border-radius: 3px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #2F80ED;
+}
+
+/* Анимация для плавного появления скроллбара */
+::-webkit-scrollbar-thumb {
+    animation: fadeInScrollbar 0.5s ease-in-out;
+}
+
+@keyframes fadeInScrollbar {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Стили для горизонтального скролла (если понадобится) */
+::-webkit-scrollbar:horizontal {
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: #D1D5DB;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #2F80ED;
+}
+
+
+/* Стили для блока возможностей */
+.features {
+    padding: 100px 0;
+    background: #FFFFFF; /* Фон карточек */
+}
+
+.features__header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 80px auto;
+}
+
+.features__title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1F2937; /* Текст основной */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.features__subtitle {
+    font-size: 1.1rem;
+    color: #4B5563; /* Текст вторичный */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Сетка карточек */
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 30px;
+}
+
+.feature__card {
+    background: #F7FAFC; /* Фон светлый */
+    padding: 40px 30px;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature__card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: #2F80ED; /* Основной синий */
+}
+
+/* Иконка карточки */
+.card__icon {
+    width: 60px;
+    height: 60px;
+    background: #E6F0FF; /* Светлый синий */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    color: #2F80ED; /* Основной синий */
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.feature__card:hover .card__icon {
+    background: #2F80ED; /* Основной синий */
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+/* Заголовок карточки */
+.card__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1F2937; /* Текст основной */
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+/* Описание карточки */
+.card__description {
+    font-size: 1rem;
+    color: #4B5563; /* Текст вторичный */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Декоративный элемент для карточек */
+.feature__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #2F80ED, #1C5FD3); /* Градиент синий */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.feature__card:hover::before {
+    transform: scaleX(1);
+}
+
 
 
 
@@ -1629,6 +1843,15 @@ h1, h2, h3, h4, h5, h6 {
 
     .hero__title {
         font-size: 2.5rem;
+    }
+
+    .features__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .features__title {
+        font-size: 2.2rem;
     }
 }
 
@@ -1776,7 +1999,45 @@ h1, h2, h3, h4, h5, h6 {
         align-items: center;
     }
 
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
 
+    .scroll-container::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    .features {
+        padding: 60px 0;
+    }
+
+    .features__header {
+        margin-bottom: 50px;
+    }
+
+    .features__title {
+        font-size: 2rem;
+    }
+
+    .features__subtitle {
+        font-size: 1rem;
+    }
+
+    .features__grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .feature__card {
+        padding: 30px 25px;
+        text-align: center;
+    }
+
+    .card__icon {
+        margin: 0 auto 20px auto;
+    }
 
 }
 
@@ -1801,6 +2062,14 @@ h1, h2, h3, h4, h5, h6 {
 
     .hero__title {
         font-size: 1.75rem;
+    }
+
+    .features__title {
+        font-size: 1.75rem;
+    }
+
+    .feature__card {
+        padding: 25px 20px;
     }
 }
 
