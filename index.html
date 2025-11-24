@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Храм Затерянных Тайн - Книга-квест. Читать онлайн.</title>
+    <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="description" content='Читать книгу-квест «Храм Затерянных Тайн» с эксклюзивными иллюстрациями в полном объёме. Год публикации: 2023 г.'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/dd2b9eb772.js" crossorigin="anonymous"></script>
+    <script src="assets/libs/gsap/gsap.min.js" defer></script>
+    <script src="assets/libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="assets/libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <script src="assets/js/paralax.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>
+    <script src="assets/js/slick.min.js" defer></script>
+    <script src="assets/js/slider.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container__nav">
+            <div class="header_inner">
+                <!-- Логотип и название проекта -->
+                <div class="header_logo">
+                    <a href="#" data-scroll="#team">
+                        <img src="assets/images/logo.ico" alt="" class="logo-img">
+                        <span class="project-name">EdTech</span>
+                    </a>
+                </div>
+
+                <!-- Навигация по центру -->
+                <nav class="nav" id="nav">
+                    <a class="nav_link" href="#" data-scroll="#features">Возможности</a>
+                    <a class="nav_link" href="#" data-scroll="#how-it-works">Как это работает</a>
+                    <a class="nav_link" href="#" data-scroll="#rating">Рейтинг</a>
+                    <a class="nav_link" href="#" data-scroll="#about">О нас</a>
+
+                    <!-- Кнопки авторизации для мобильной версии -->
+                    <div class="nav_auth-mobile">
+                        <button class="auth-btn login-btn mobile-auth-btn">Войти</button>
+                        <button class="auth-btn register-btn mobile-auth-btn">Начать обучение</button>
+                    </div>
+                </nav>
+
+                <!-- Кнопки авторизации для десктопной версии -->
+                <div class="header_auth">
+                    <button class="auth-btn login-btn">Войти</button>
+                    <button class="auth-btn register-btn">Начать обучение</button>
+                </div>
+
+                <button class="nav-toggle" id="nav_toggle">
+                    <span class="nav-toggle_item"></span>
+                </button>
+            </div>
+        </div>
+    </header> <!-- Nav Menu-->
+
+    <div class="wrapper">
+        <div class="scroll-container">
+            <header class="main-header">
+                <div class="layers">
+                    <div class="layer__header">
+                        <h2 class="layers__caption">Книга-квест</h2>
+                        <h1 class="layers__title">Храм Затерянных Тайн</h1>
+                    </div>
+                    <div class="layer layers__base" style="background-image: url(assets/images/paralax/layer-base.png);"></div>
+                    <div class="layer layers__middle" style="background-image: url(assets/images/paralax/layer-middle.png);"></div>
+                    <div class="layer layers__front" style="background-image: url(assets/images/paralax/layer-front.png);"></div>
+                </div>
+            </header> <!--header-->
+
+            <article class="main-article" id="print__version" style="background-image: url(assets/images/paralax/dungeon.jpg);">
+                <div class="container container__slider">
+                    <div class="main-article__slider">
+                        <div class="slider">
+                            <div class="slider__item  slider__item--first"></div>
+                            <div class="slider__item  slider__item--second"></div>
+                            <div class="slider__item  slider__item--third"></div>
+                        </div>
+                    </div> <!-- SLIDER -->
+                    <div class="main-article__text">
+                        <h2 class="main-article__header">Новое издание</h2>
+                        <p class="main-article__paragraph">Затерянный храм Майа в непроходимых джунглях ждет вас! Приоткройте завесу тайн и отправляйтесь в древний храмовый комлекс, полный опасностей и загадок. Но не позволяйте сверкающим сокровищам ослепить вас, потому что они будут повсюду создавать препятствия на вашем пути.</p>
+                        <form action="demo/demo.html" class="read_form read_form__main">
+                            <button class="read_btm">Предпросмотр</button>
+                        </form>
+                    </div>
+                </div>
+            </article> <!--main-article-->
+
+            <section class="demo" id="demo" style="background-image: url(assets/images/demo/screen.jpg)">
+                <div class="container">
+                    <div class="main-article__text demo__text">
+                        <div class="demo__text-block">
+                            <h2 class="main-article__header">Как играть?</h2>
+                            <p class="main-article__paragraph">Удивительные страницы книги заставят вас выйти за грани стандартного мышления. Вам предстоит: решать загадки, раскрывать шифры и проходить головоломки. Сможете ли вы принять вызов, пройти все испытания Храма Затерянных Тайн и найти сокровища Майа?</p>
+                        </div>
+                        <form action="demo/demo.html" class="read_form" target="_blank">
+                            <button class="read_btm demo_btm">Читать фрагмент<i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                    <div class="screen__wrapper">
+                        <div class="screen">
+                            <div class="screen-image"></div>
+                            <div class="screen-overlay"></div>
+                            <div class="screen-content">
+                                <div class="screen-content__wrapper">
+                                    <form action="demo/demo.html" target="_blank">
+                                        <button class="chapter">Читать</button>
+                                    </form>
+                                    <div class="chapter_title"><a href="" target="_blank">Экспедиция:<br>Храм Солнца</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- demo -->
+
+            <section class="features" id="features">
+                <div class="container__features">
+                    <div class="features_inner">
+                        <h2 class="section_header">Об издании</h2>
+                        <div class="items">
+                            <div class="item">
+                                <img class="item_icon" src="assets/images/features/star.svg" alt="star">
+                                <div class="item_header">Читай и играй</div>
+                                <div class="item_text"><p>Разгадывайте загадки, решайте головоломки, расшифровывайте послания древней цивилизации.</p></div>
+                            </div>
+
+                            <div class="item">
+                                <img class="item_icon" src="assets/images/features/men.svg" alt="men">
+                                <div class="item_header">Интерактивное издание</div>
+                                <div class="item_text"><p>Книга полностью интерактивна: из нее нужно вырывать страницы, вырезать предметы необходимые для прохождения головоломок.
+                                </p></div>
+                            </div>
+
+                            <div class="item">
+                                <img class="item_icon" src="assets/images/features/group.svg" alt="talk">
+                                <div class="item_header">Необычная концепция</div>
+                                <div class="item_text"><p>История и иллюстрации к нашему изданию генерировались с помощью нескольких нейронных сетей, которые придают уникальный вид всему произведению</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- features -->
+            <section class="features__image" style="background-image: url(assets/images/features/features.PNG)">
+                <div class="features__image__before"></div>
+                <div class="features__image__after"></div>
+            </section> <!-- features__image -->
+
+            <section class="team" id="team">
+                <div class="team_header">
+                    <h3 class="section_suptitle">Команда</h3>
+                    <h2 class="section_title">BookVentures</h2>
+                </div>
+                <div class="container">
+                    <div class="box_wrapper">
+                        <div class="boxes">
+                            <div class="box">
+                                <div class="team_box box_maxim">
+                                    <a href="https://vk.com/bit_maximum" target="_blank">
+                                        <div class="team_box__title">
+                                            <h3 class="name">Максим Меркурьев</h3>
+                                            <h3 class="post">Верстальщик</h3>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="team_box__line"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="team_box box_anton">
+                                    <a href="https://vk.com/aaashaaapovaaal02" target="_blank">
+                                        <div class="team_box__title">
+                                            <h3 class="name">Антон Шаповал</h3>
+                                            <h3 class="post">Типограф</h3>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="team_box__line"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="team_box box_cat">
+                                    <a href="https://vk.com/severrrrrrrrrrrrrrr" target="_blank">
+                                        <div class="team_box__title">
+                                            <h3 class="name">Север</h3>
+                                            <h3 class="post">Кот</h3>
+                                            <div class="line"></div>
+                                        </div>
+                                        <div class="team_box__line"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> <!-- team -->
+
+            <section class="footer" style="background-image: url(assets/images/footer/footer.jpg)">
+                <!--<div class="container">-->
+                <div class="footer-wrapper">
+                    <a href="docs/BookVentures.pdf" class="read_form read_form__footer" download>
+                        <button class="footer_btm footer_btm__pdf" id="pdf"><i class="fa-solid fa-file-arrow-down"></i>  PDF версия издания</button>
+                    </a>
+                </div>
+                <!--</div>-->
+            </section> <!-- footer -->
+        </div> <!-- scroll-container -->
+    </div> <!-- wrapper -->
+</body>
+</html>

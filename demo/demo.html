@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Демонстрационный фрагмент - Храм Затерянных Тайн.</title>
+    <link rel="icon" href="assets/images/logo.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="description" content='Читать фрагмент книги «Храм Забытых Тайн» с эксклюзивными иллюстрациями в полном объёме. Дата написания: 2023 г.'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/dd2b9eb772.js" crossorigin="anonymous"></script>
+    <script src="assets/libs/gsap/gsap.min.js" defer></script>
+    <script src="assets/libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="assets/libs/gsap/ScrollSmoother.min.js" defer></script>
+
+    <script src="assets/js/paralax.js" defer></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" defer></script>
+    <script src="assets/js/slick.min.js" defer></script>
+    <script src="assets/js/slider.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <script src="assets/js/wheel.js" defer></script>
+    <script src="assets/js/modal.js" defer></script>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container__nav">
+        <div class="header_inner">
+            <div class="header_logo"><a href="../index.html">Об издании</a></div>
+
+            <nav class="nav" id="nav">
+                <a class="nav_link" href="" data-scroll="#print__version">Поиск артефакта</a>
+                <a class="nav_link" href="" data-scroll="#matrix">Код матрицы</a>
+                <a class="nav_link" href="" data-scroll="#keys">Ключи шифров</a>
+                <a class="nav_link" href="" data-scroll="#massage">Скрытое послание</a>
+            </nav>
+
+            <button class="nav-toggle" id="nav_toggle">
+                <span class="nav-toggle_item"></span>
+            </button>
+        </div>
+    </div>
+</header> <!-- Nav Menu-->
+
+<div class="wrapper">
+    <div class="scroll-container">
+        <header class="main-header">
+            <div class="layers">
+                <div class="modal modal1">
+                    <div class="modal__main">
+                        <h2 class="modal__title main-article__header">Прочти перед тем,<br> как начать</h2>
+                        <div class="modal__container main-article__paragraph">
+                            <p>
+                                «Храм Затерянных Тайн» — это квест, приключенческая игра, в которой участник должен применить все свои умственные способности, сноровку, наблюдательность, креативность и смекалку, чтобы раскрыть тайны древней цивилизации.<br><br>
+                                В книге этого жанра не дается пояснений, как герой решил ту или иную задачу. Настоящим героем книги является сам читатель.<br><br>
+                                Вам, как главному герою, предстоит решить множество загадок, встречающихся на вашем пути. При решении некоторых из них вы получите номер — код, который укажет, как разгадать тайный шифр и прочесть послание древних.<br><br>
+                                Ниже вас ждёт тренировочное задание. Оно познакомит вас со всеми типами задач, с которыми вам предстоит столкнуться в этой истории. Не пропускайте его!<br><br>
+                                Желаем удачи в ваших исследованиях!
+                            </p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
+                    </div>
+                </div> <!-- modal -->
+                <div class="layer layers__base" style="background-image: url(assets/images/paralax/layer-base1-1.jpg);"></div>
+                <div class="layer layers__middle" style="background-image: url(assets/images/paralax/layer-middle1-1.png);"></div>
+                <div class="layer layers__front" style="background-image: url(assets/images/paralax/layer-front3-1.png);"></div>
+            </div>
+
+            <button class="modal_btn modal_btn1 header_btn">Прочти перед тем,<br> как начать</button>
+        </header> <!--header-->
+
+        <article class="main-article" id="print__version" style="background-image: url(assets/images/paralax/next.jpeg);">
+            <div class="container container__slider">
+                <div class="main-article__text">
+                    <h2 class="main-article__header">Поиск артефакта</h2>
+                    <p class="main-article__paragraph">Ваш путь преграждает упавшее посреди дороги огромное дерево. Это одно из первых препятствий на пути к сокровищам Храма Затерянных Тайн. Иного пути к месту раскопок вы не находите, и в то же время пешком добираться не представляется возможным.<br><br>Чтобы продолжить путь, вам нужно решить, как избавится от дерева. Кажется, дерево можно <span class="magic-text">разрубить</span>. Может у вас найдётся подходящий для этого инструмент...</p>
+
+                    <button class="modal_btn modal_btn2 read_btm read_form read_form__main">Инструкция</button>
+                </div>
+                <div class="main-article__slider">
+                    <div class="slider">
+                        <div class="slider__item  slider__item--first"></div>
+                        <div class="slider__item  slider__item--second"></div>
+                        <div class="slider__item  slider__item--third"></div>
+                        <div class="slider__item  slider__item--forth"></div>
+                    </div>
+                </div> <!-- SLIDER -->
+                <div class="modal modal2">
+                    <div class="modal__main">
+                        <h2 class="modal__title main-article__header">Инструменты</h2>
+                        <div class="modal__container main-article__paragraph">
+                            <p>
+                                На вашем пути вам понадобится использовать различные инструменты.<br><br>
+                                Каждый инструмент имеет смысл использовать только один раз и в подходящей ситуации.<br><br>
+                                Используйте полученный «номер ячейки» для разгадки «Кода матрицы» ниже.
+                            </p>
+                        </div>
+                        <button class="modal__close">&#10006;</button>
+                    </div>
+                </div> <!-- modal -->
+            </div>
+        </article> <!--main-article-->
+
+        <section class="matrix" id="matrix" style="background-image: url(assets/images/matrix/screen5.jpg)">
+            <div class="container">
+                <div class="matrix-inner">
+                    <div class="text-block text-block__left text-block__top" id="matrix-key">
+                        <h2 class="main-article__header">Код матрицы</h2>
+                        <p class="main-article__paragraph matrix__paragraph">Чтобы проверить свои трехзначные коды (они же «Номера ячеек»), начните в таблице со слова СТАРТ и далее следуйте инструкциям. Затем сопоставьте название ячейки с «Ключами» ниже. Предварительно потренируйтесь хотя бы один раз, чтобы разобраться в примере кода. </p>
+                    </div>
+                    <div class="text-block text-block__right instruction text-block__top">
+                        <br>
+                        <p class="main-article__paragraph matrix__paragraph">1 ЦИФРА: считать <strong>X</strong> клеток справа</p>
+                        <p class="main-article__paragraph matrix__paragraph">2 ЦИФРА: считать <strong>Y</strong> клеток внизу</p>
+                        <p class="main-article__paragraph matrix__paragraph">3 ЦИФРА: в зависимости от цифры выполнить действие, согласно нижнему краю таблицы</p>
+                        <p class="main-article__paragraph matrix__paragraph">Код этого примера: <strong>387</strong></p>
+                    </div>
+                    <div class="table__wrapper">
+                        <div class="table">
+                            <img src="assets/images/matrix/matrix.png" alt="Код матрицы">
+                        </div>
+                    </div>
+                    <div class="matrix__bottom-text__wrapper">
+                        <div class="text-block text-block__left text-block__bottom">
+                            <p class="main-article__paragraph">0 - 3 клетки, для подсчета вниз<br>
+                                1 - 3 клетки, для подсчета влево<br>
+                                2 - 4 клетки, для подсчета вверх<br>
+                                3 - 4 клетки, для подсчета вправо<br>
+                                4 - 2 клетки, для подсчета влево</p>
+                        </div>
+                        <div class="text-block text-block__right text-block__bottom">
+                            <p class="main-article__paragraph">5 - 3 клетки, для подсчета вверх<br>
+                                6 - 4 клетки, для подсчета влево<br>
+                                7 - 2 клетки, для подсчета вверх<br>
+                                8 - 3 клетки, для подсчета вправо<br>
+                                9 - 2 клетки, для подсчета вниз</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- matrix -->
+
+        <section class="keys" id="keys">
+            <div class="container__keys">
+                <div class="features_inner">
+                    <h2 class="section_header">Ключи шифров</h2>
+                    <div class="items">
+                        <div class="item">
+                            <div class="item__wrapper" id="key-1">
+                                <div class="text-block keys__text-block">
+                                    <div class="item_text">2A: Земля</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__wrapper" id="key-2">
+                                <div class="text-block keys__text-block">
+                                    <div class="item_text">7R: Время</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__wrapper" id="key-3">
+                                <div class="text-block keys__text-block">
+                                    <div class="item_text">9S: Майа</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__wrapper" id="key-4">
+                                <div class="text-block keys__text-block">
+                                    <div class="item_text">5С: Тайн</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__wrapper" id="key-5">
+                                <div class="text-block keys__text-block">
+                                    <div class="item_text">3J: Солнце</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__wrapper" id="key-6">
+                                <div class="text-block keys__text-block">
+                                    <div class="item_text">3G: Забытых</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__wrapper" id="key-7">
+                                <div class="text-block keys__text-block">
+                                    <div class="item_text">2B: Дом</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item__wrapper" id="key-example">
+                                <div class="text-block keys__text-block">
+                                    <div class="item_text">Пример: Вода</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- features -->
+
+        <section class="massage" id="massage" style="background-image: url(assets/images/massage/1.jpg)">
+            <div class="container">
+                <div class="massage__text-wrapper">
+                    <div class="text-block massage__text-block--leading">
+                        <h2 class="main-article__header">Скрытое послание</h2>
+                        <p class="main-article__paragraph">Вы вернулись в лагерь с необычным артефактом, похожим на символ Майя. Он состоит из двух вращающихся дисков, которые надо сопоставить, чтобы получился определённый порядок слов, похожий на тайный шифр затерянного племени Майя. <br><br>С помощью шифровального диска ниже попробуйте восстановить исходное послание.</p>
+                    </div>
+                </div>
+                <div class="massage__text-wrapper">
+                    <div class="massage__text-block">
+                        <h2 class="main-article__header massage__header">Тайное знание</h2>
+                        <p class="main-article__paragraph massage__paragraph"><span class="green">Ч</span>юа<span class="red">ш</span> Забытых <span class="green">Ф</span>он<span class="red">н</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </section> <!-- massage -->
+
+        <section class="keys disk" id="wheel2">
+            <div class="container__keys">
+                <div class="features_inner">
+                    <div class="disk__item_wrapper">
+                        <h2 class="disk__header">Шифровальный диск</h2>
+                    </div>
+                    <div class="disk__item_wrapper">
+                        <button class="modal_btn modal_btn3 read_form read_form__main">Что делать?</button>
+                    </div>
+                    <div class="modal modal3">
+                        <div class="modal__wrapper">
+                            <div class="modal__main">
+                                <h2 class="modal__title main-article__header">Взлом шифра</h2>
+                                <div class="modal__container main-article__paragraph">
+                                    <p>
+                                        Чтобы расшифровать послания на древних артефактах (вам предстоит находить их на страницах книги) и следуйте инструкциям ниже. Предварительно потренируйтесь хотя бы один раз, чтобы разобраться в примере шифра.<br><br>
+                                        1. Прокрутите внутренний диск так, чтобы БУКВА ключа (на внутреннем диске) встала под чертой (под буквой А на внешнем диске);<br><br>
+                                        2. Сопоставьте БУКВУ из зашифрованного сообщения с буквой внешнего диска
+                                        напротив неё;<br><br>
+                                        3. Если сообщение длиннее ключевого слова, используйте ключевое слово с первой буквы;<br><br>
+                                        4. <span class="green">Зелёная</span> буква значит то, КЛЮЧ нужно использовать с ПЕРВОЙ буквы. <span class="red">Красная</span> - конец зашифрованной части.<br></p>
+                                    <h2 class="modal__subtitle"><a href="https://youtu.be/OxnsLchQc2Y" target="_blank">Видео-инструкция</a></h2>
+                                </div>
+                                <button class="modal__close">&#10006;</button>
+                            </div>
+                        </div>
+                    </div> <!-- modal -->
+                    <div class="disk__item_wrapper disk__wrapper">
+                        <div class="wheel__wrapper">
+                            <div class="wheel"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- disk -->
+
+        <section class="footer" style="background-image: url(assets/images/footer/footer.jpg)">
+            <!--<div class="container">-->
+            <div class="footer-wrapper">
+                <form action="../index.html" class="read_form read_form__footer">
+                    <button class="footer_btm footer_btm__pdf" id="pdf"><i class="fa-solid fa-circle-chevron-left"></i>  Вернуться на главную страницу</button>
+                </form>
+            </div>
+            <!--</div>-->
+        </section> <!-- footer -->
+    </div> <!-- scroll-container -->
+</div> <!-- wrapper -->
+</body>
+</html>
