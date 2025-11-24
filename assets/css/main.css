@@ -1829,7 +1829,201 @@ body {
 
 
 
+/* Стили для блока "Как это работает" */
+.how-it-works {
+    padding: 100px 0;
+    background: #F7FAFC; /* Фон светлый */
+}
 
+.how-it-works__header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 80px auto;
+}
+
+/* Бейдж процесса */
+.process-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #2F80ED; /* Основной синий */
+    border-radius: 50px;
+    background: #E6F0FF; /* Светлый синий */
+    color: #2F80ED; /* Основной синий */
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.process-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1F2937; /* Текст основной */
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.process-description {
+    font-size: 1.1rem;
+    color: #4B5563; /* Текст вторичный */
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Контейнер шагов */
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+/* Карточка шага */
+.step-card {
+    background: transparent;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Бейдж шага */
+.step-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    border: 1px solid #2F80ED; /* Основной синий */
+    border-radius: 50px;
+    background: #E6F0FF; /* Светлый синий */
+    color: #2F80ED; /* Основной синий */
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* Иконка шага с разными цветами */
+.step-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    color: #FFFFFF;
+    font-size: 32px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Цвета для каждой иконки */
+.step-card:nth-child(1) .step-icon {
+    background: #2F80ED; /* Основной синий */
+}
+
+.step-card:nth-child(2) .step-icon {
+    background: #27AE60; /* Зелёный успех */
+}
+
+.step-card:nth-child(3) .step-icon {
+    background: #FF8F3D; /* Оранжевый акцент */
+}
+
+.step-card:nth-child(4) .step-icon {
+    background: #FFD166; /* Лимонный акцент */
+}
+
+.step-card:hover .step-icon {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок шага */
+.step-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1F2937; /* Текст основной */
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+/* Описание шага */
+.step-description {
+    font-size: 0.95rem;
+    color: #4B5563; /* Текст вторичный */
+    line-height: 1.5;
+    margin: 0;
+}
+
+/*!* Соединительные линии между карточками для десктопа *!*/
+/*.steps-container::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    top: 40%;*/
+/*    left: 25%;*/
+/*    width: 10%;*/
+/*    height: 2px;*/
+/*    background: linear-gradient(90deg,*/
+/*    #2F80ED 0%,*/
+/*    #27AE60 33%,*/
+/*    #FF8F3D 66%,*/
+/*    #FFD166 100%*/
+/*    );*/
+/*    z-index: 1;*/
+/*}*/
+
+
+/* Альтернативный вариант с отдельными линиями между карточками */
+.step-connector {
+    position: absolute;
+    top: 40%;
+    height: 2px;
+    z-index: 1;
+}
+
+/* Линия между шагом 1 и 2 */
+.step-card:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    right: -30%;
+    width: 70%;
+    height: 2px;
+    background: linear-gradient(90deg, #2F80ED, rgba(39, 174, 96, 0));
+    z-index: 1;
+}
+
+/* Линия между шагом 2 и 3 */
+.step-card:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    right: -30%;
+    width: 70%;
+    height: 2px;
+    background: linear-gradient(90deg, #27AE60, rgba(255, 143, 61, 0));
+    z-index: 1;
+}
+
+/* Линия между шагом 3 и 4 */
+.step-card:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    top: 35%;
+    right: -30%;
+    width: 70%;
+    height: 2px;
+    background: linear-gradient(90deg, #FF8F3D, rgba(255, 209, 102, 0));
+    z-index: 1;
+}
+
+/* Кнопка действий */
+.process-actions {
+    text-align: center;
+}
+
+.btn--large {
+    padding: 16px 40px;
+    font-size: 1.1rem;
+}
 
 
 
@@ -1851,6 +2045,28 @@ body {
     }
 
     .features__title {
+        font-size: 2.2rem;
+    }
+
+    .steps-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px 30px;
+    }
+
+    /* Скрываем десктопные линии */
+    .steps-container:nth-child(2)::before,
+    .steps-container:nth-child(2)::after,
+    .step-card:nth-child(2)::after {
+        display: none;
+    }
+
+    .step-card:nth-child(1)::after,
+    .step-card:nth-child(3)::after{
+        right: -25%;
+    }
+
+
+    .process-title {
         font-size: 2.2rem;
     }
 }
@@ -2039,6 +2255,60 @@ body {
         margin: 0 auto 20px auto;
     }
 
+
+    .how-it-works {
+        padding: 60px 0;
+    }
+
+    .how-it-works__header {
+        margin-bottom: 50px;
+    }
+
+    .process-title {
+        font-size: 2rem;
+    }
+
+    .process-description {
+        font-size: 1rem;
+    }
+
+    .steps-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        max-width: 400px;
+        margin: 0 auto 50px auto;
+    }
+
+    .step-card {
+        position: relative;
+    }
+
+    /* Вертикальные соединительные линии для мобильных */
+    .step-connector {
+        display: block;
+        position: absolute;
+        top: auto;
+        bottom: -45px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 40px;
+        background: linear-gradient(180deg, #2F80ED, #1C5FD3); /* Вертикальный градиент */
+    }
+
+    .step-connector::after {
+        left: -3px;
+        right: auto;
+        top: auto;
+        bottom: -4px;
+    }
+
+    .step-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 28px;
+    }
+
 }
 
 
@@ -2071,5 +2341,15 @@ body {
     .feature__card {
         padding: 25px 20px;
     }
+
+    .process-title {
+        font-size: 1.75rem;
+    }
+
+    .btn--large {
+        width: 100%;
+        max-width: 280px;
+    }
+
 }
 
