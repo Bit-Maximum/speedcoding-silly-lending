@@ -1393,6 +1393,247 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
 }
 
+/* Основные стили для героя */
+.hero {
+    padding: 80px 0;
+    background: #F7FAFC; /* Фон светлый */
+}
+
+.hero__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* Левая часть контента */
+.hero__content {
+    max-width: 540px;
+}
+
+/* Бейдж с иконкой */
+.hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    border: 1px solid #D1D5DB; /* Границы/иконки */
+    border-radius: 50px;
+    background: #FFFFFF; /* Фон карточек */
+    margin-bottom: 30px;
+}
+
+.badge__icon {
+    width: 24px;
+    height: 24px;
+    background: #FFD166; /* Лимонный акцент */
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1F2937; /* Текст основной */
+    font-size: 12px;
+}
+
+.badge__text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #4B5563; /* Текст вторичный */
+}
+
+/* Заголовок */
+.hero__title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #1F2937; /* Текст основной */
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* Описание */
+.hero__description {
+    font-size: 1.1rem;
+    color: #4B5563; /* Текст вторичный */
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Кнопки */
+.hero__actions {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 60px;
+}
+
+.btn {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn--primary {
+    background: #2F80ED; /* Основной синий */
+    color: white;
+    box-shadow: 0 4px 12px rgba(47, 128, 237, 0.3);
+}
+
+.btn--primary:hover {
+    background: #1C5FD3; /* Тёмный синий */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(47, 128, 237, 0.4);
+}
+
+.btn--secondary {
+    background: transparent;
+    border: 1px solid #D1D5DB; /* Границы/иконки */
+    color: #4B5563; /* Текст вторичный */
+}
+
+.btn--secondary:hover {
+    background: #F7FAFC; /* Фон светлый */
+    border-color: #2F80ED; /* Основной синий */
+    color: #2F80ED; /* Основной синий */
+}
+
+/* Статистика */
+.hero__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.stat__card {
+    text-align: left;
+}
+
+.stat__number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2F80ED; /* Основной синий */
+    margin-bottom: 4px;
+}
+
+.stat__label {
+    font-size: 14px;
+    color: #4B5563; /* Текст вторичный */
+    font-weight: 500;
+}
+
+/* Правая часть с картинкой */
+.hero__visual {
+    position: relative;
+}
+
+.hero__image-wrapper {
+    position: relative;
+    border-radius: 16px;
+    /*overflow: hidden;*/
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+/* Плавающие карточки */
+.floating-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background: #FFFFFF; /* Фон карточек */
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border: 1px solid #F7FAFC; /* Фон светлый */
+    z-index: 2;
+}
+
+.card--bottom-left {
+    bottom: -20px;
+    left: -20px;
+}
+
+.card--top-right {
+    top: -20px;
+    right: -20px;
+}
+
+.card__icon {
+    width: 40px;
+    height: 40px;
+    background: #E6F0FF; /* Светлый синий */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2F80ED; /* Основной синий */
+    font-size: 16px;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__subtitle {
+    font-size: 12px;
+    color: #4B5563; /* Текст вторичный */
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.card__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1F2937; /* Текст основной */
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #FFFFFF;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Добавляем тень для лучшего визуального разделения */
+}
+
+
+
+
+
+
+
+
+
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .hero__inner {
+        gap: 40px;
+    }
+
+    .hero__title {
+        font-size: 2.5rem;
+    }
+}
+
+
+
 /* Мобильная версия */
 @media (max-width: 770px) {
     .nav {
@@ -1470,6 +1711,96 @@ h1, h2, h3, h4, h5, h6 {
 
     .header_auth {
         display: none;
+    }
+
+    .hero__inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero__content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero__badge {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .hero__description {
+        font-size: 1rem;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero__actions {
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .hero__stats {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .stat__card {
+        text-align: center;
+    }
+
+
+    .floating-card {
+        /*position: relative;*/
+        /*bottom: auto;*/
+        /*left: auto;*/
+        /*top: auto;*/
+        /*right: auto;*/
+        margin: 10px;
+        /*justify-content: center;*/
+    }
+
+    .hero__image-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+}
+
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+    .hero__actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .hero__stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        max-width: 200px;
+    }
+
+    .hero__title {
+        font-size: 1.75rem;
     }
 }
 
