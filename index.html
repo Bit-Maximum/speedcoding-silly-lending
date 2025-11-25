@@ -44,15 +44,15 @@
 
                     <!-- Кнопки авторизации для мобильной версии -->
                     <div class="nav_auth-mobile">
-                        <button class="auth-btn login-btn mobile-auth-btn">Войти</button>
-                        <button class="auth-btn register-btn mobile-auth-btn">Начать обучение</button>
+                        <a href="mailto:temp@mail.com" class="auth-btn login-btn mobile-auth-btn">Войти</a>
+                        <a href="mailto:temp@mail.com" class="auth-btn register-btn mobile-auth-btn">Начать обучение</a>
                     </div>
                 </nav>
 
                 <!-- Кнопки авторизации для десктопной версии -->
                 <div class="header_auth">
-                    <button class="auth-btn login-btn">Войти</button>
-                    <button class="auth-btn register-btn">Начать обучение</button>
+                    <a href="mailto:temp@mail.com" class="auth-btn login-btn">Войти</a>
+                    <a href="mailto:temp@mail.com" class="auth-btn register-btn">Начать обучение</a>
                 </div>
 
                 <button class="nav-toggle" id="nav_toggle">
@@ -496,157 +496,248 @@
                 </div>
             </section>
 
-
-
-            <header class="main-header">
-                <div class="layers">
-                    <div class="layer__header">
-                        <h2 class="layers__caption">Книга-квест</h2>
-                        <h1 class="layers__title">Храм Затерянных Тайн</h1>
-                    </div>
-                    <div class="layer layers__base" style="background-image: url(assets/images/paralax/layer-base.png);"></div>
-                    <div class="layer layers__middle" style="background-image: url(assets/images/paralax/layer-middle.png);"></div>
-                    <div class="layer layers__front" style="background-image: url(assets/images/paralax/layer-front.png);"></div>
-                </div>
-            </header> <!--header-->
-
-            <article class="main-article" id="print__version" style="background-image: url(assets/images/paralax/dungeon.jpg);">
-                <div class="container container__slider">
-                    <div class="main-article__slider">
-                        <div class="slider">
-                            <div class="slider__item  slider__item--first"></div>
-                            <div class="slider__item  slider__item--second"></div>
-                            <div class="slider__item  slider__item--third"></div>
-                        </div>
-                    </div> <!-- SLIDER -->
-                    <div class="main-article__text">
-                        <h2 class="main-article__header">Новое издание</h2>
-                        <p class="main-article__paragraph">Затерянный храм Майа в непроходимых джунглях ждет вас! Приоткройте завесу тайн и отправляйтесь в древний храмовый комлекс, полный опасностей и загадок. Но не позволяйте сверкающим сокровищам ослепить вас, потому что они будут повсюду создавать препятствия на вашем пути.</p>
-                        <form action="demo/demo.html" class="read_form read_form__main">
-                            <button class="read_btm">Предпросмотр</button>
-                        </form>
-                    </div>
-                </div>
-            </article> <!--main-article-->
-
-            <section class="demo" id="demo" style="background-image: url(assets/images/demo/screen.jpg)">
+            <section class="about" id="about">
                 <div class="container">
-                    <div class="main-article__text demo__text">
-                        <div class="demo__text-block">
-                            <h2 class="main-article__header">Как играть?</h2>
-                            <p class="main-article__paragraph">Удивительные страницы книги заставят вас выйти за грани стандартного мышления. Вам предстоит: решать загадки, раскрывать шифры и проходить головоломки. Сможете ли вы принять вызов, пройти все испытания Храма Затерянных Тайн и найти сокровища Майа?</p>
+                    <!-- Верхний блок с заголовком -->
+                    <div class="about__header">
+                        <div class="about-badge">
+                            О нас
                         </div>
-                        <form action="demo/demo.html" class="read_form" target="_blank">
-                            <button class="read_btm demo_btm">Читать фрагмент<i class="fa-solid fa-arrow-right"></i></button>
-                        </form>
+                        <h2 class="about-title">Создаём будущее технологического образования</h2>
+                        <p class="about-subtitle">
+                            Цифровая платформа для подготовки школьных команд к технологическим олимпиадам нового поколения
+                        </p>
                     </div>
-                    <div class="screen__wrapper">
-                        <div class="screen">
-                            <div class="screen-image"></div>
-                            <div class="screen-overlay"></div>
-                            <div class="screen-content">
-                                <div class="screen-content__wrapper">
-                                    <form action="demo/demo.html" target="_blank">
-                                        <button class="chapter">Читать</button>
-                                    </form>
-                                    <div class="chapter_title"><a href="" target="_blank">Экспедиция:<br>Храм Солнца</a></div>
+
+                    <!-- Основной контент -->
+                    <div class="about-content">
+                        <!-- Левая часть - миссия -->
+                        <div class="about-mission">
+                            <div class="mission-card">
+                                <div class="mission-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h3>Наша миссия</h3>
+                                <p>
+                                    Мы создаём единое цифровое пространство для стандартизации и масштабирования подготовки школьных команд
+                                    к технологическим олимпиадам и конкурсам на уровне лучших практик России.
+                                </p>
+                            </div>
+
+                            <div class="impact-stats">
+                                <div class="impact-item">
+                                    <div class="impact-number">15+</div>
+                                    <div class="impact-label">школ Приморского края</div>
+                                </div>
+                                <div class="impact-item">
+                                    <div class="impact-number">500+</div>
+                                    <div class="impact-label">активных участников</div>
+                                </div>
+                                <div class="impact-item">
+                                    <div class="impact-number">85%</div>
+                                    <div class="impact-label">успешных проектов</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Центральная часть - ключевые элементы -->
+                        <div class="about-features">
+                            <div class="feature-highlight">
+                                <div class="feature-number">01</div>
+                                <div class="feature-content">
+                                    <h4>Единый цифровой формат</h4>
+                                    <p>Этапы, дедлайны, командные роли и формат сдачи решений в стандартизированной среде</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-highlight">
+                                <div class="feature-number">02</div>
+                                <div class="feature-content">
+                                    <h4>Облачный раннер</h4>
+                                    <p>Автоматическая проверка решений в контейнерах с логированием воспроизводимости</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-highlight">
+                                <div class="feature-number">03</div>
+                                <div class="feature-content">
+                                    <h4>Командный кабинет</h4>
+                                    <p>Распределение ролей, трекинг задач и коммуникация в единой цифровой среде</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-highlight">
+                                <div class="feature-number">04</div>
+                                <div class="feature-content">
+                                    <h4>Умная аналитика</h4>
+                                    <p>Автоматизированная генерация отчётов о прогрессе для эффективного управления</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Правая часть - визуал -->
+                        <div class="about-visual">
+                            <div class="visual-card">
+                                <div class="card-header">
+                                    <div class="card-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <h4>Для школ и ЦДО</h4>
+                                </div>
+                                <p>Интеграция в образовательный процесс школ и центров дополнительного образования Приморского края</p>
+                            </div>
+
+                            <div class="visual-card">
+                                <div class="card-header">
+                                    <div class="card-icon">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                    <h4>Для соревнований</h4>
+                                </div>
+                                <p>Подготовка команд к технологическим олимпиадам и конкурсам федерального уровня</p>
+                            </div>
+
+                            <div class="achievement-badge">
+                                <div class="badge-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="badge-content">
+                                    <div class="badge-title">Приморский край</div>
+                                    <div class="badge-subtitle">Фокус на развитие региона</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section> <!-- demo -->
 
-            <section class="features" id="features2">
-                <div class="container__features">
-                    <div class="features_inner">
-                        <h2 class="section_header">Об издании</h2>
-                        <div class="items">
-                            <div class="item">
-                                <img class="item_icon" src="assets/images/features/star.svg" alt="star">
-                                <div class="item_header">Читай и играй</div>
-                                <div class="item_text"><p>Разгадывайте загадки, решайте головоломки, расшифровывайте послания древней цивилизации.</p></div>
-                            </div>
-
-                            <div class="item">
-                                <img class="item_icon" src="assets/images/features/men.svg" alt="men">
-                                <div class="item_header">Интерактивное издание</div>
-                                <div class="item_text"><p>Книга полностью интерактивна: из нее нужно вырывать страницы, вырезать предметы необходимые для прохождения головоломок.
-                                </p></div>
-                            </div>
-
-                            <div class="item">
-                                <img class="item_icon" src="assets/images/features/group.svg" alt="talk">
-                                <div class="item_header">Необычная концепция</div>
-                                <div class="item_text"><p>История и иллюстрации к нашему изданию генерировались с помощью нескольких нейронных сетей, которые придают уникальный вид всему произведению</p></div>
-                            </div>
+                    <!-- Нижний блок - CTA -->
+                    <div class="about-cta">
+                        <div class="cta-content">
+                            <h3>Готовы присоединиться к технологическому будущему?</h3>
+                            <p>Станьте частью сообщества, которое формирует новое поколение инженеров и IT-специалистов</p>
+                        </div>
+                        <div class="cta-actions">
+                            <button class="btn btn--primary">Начать обучение</button>
+                            <button class="btn btn--secondary">Узнать больше</button>
                         </div>
                     </div>
                 </div>
-            </section> <!-- features -->
-            <section class="features__image" style="background-image: url(assets/images/features/features.PNG)">
-                <div class="features__image__before"></div>
-                <div class="features__image__after"></div>
-            </section> <!-- features__image -->
+            </section>
 
-            <section class="team" id="team">
-                <div class="team_header">
-                    <h3 class="section_suptitle">Команда</h3>
-                    <h2 class="section_title">BookVentures</h2>
-                </div>
+            <footer class="footer">
                 <div class="container">
-                    <div class="box_wrapper">
-                        <div class="boxes">
-                            <div class="box">
-                                <div class="team_box box_maxim">
-                                    <a href="https://vk.com/bit_maximum" target="_blank">
-                                        <div class="team_box__title">
-                                            <h3 class="name">Максим Меркурьев</h3>
-                                            <h3 class="post">Верстальщик</h3>
-                                            <div class="line"></div>
-                                        </div>
-                                        <div class="team_box__line"></div>
-                                    </a>
+                    <!-- Верхняя часть футера -->
+                    <div class="footer-main">
+                        <!-- Логотип и описание -->
+                        <div class="footer-brand">
+                            <div class="footer-logo">
+                                <img src="assets/images/logo3.png" alt="Логотип" class="logo-img">
+                                <span class="project-name">EdTech Platform</span>
+                            </div>
+                            <p class="footer-description">
+                                Цифровая платформа для подготовки школьных команд к технологическим олимпиадам нового поколения в Приморском крае.
+                            </p>
+                            <div class="social-links">
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-vk"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Навигация -->
+                        <div class="footer-nav">
+                            <div class="nav-column">
+                                <h4>Платформа</h4>
+                                <ul>
+                                    <li><a href="#features">Возможности</a></li>
+                                    <li><a href="#how-it-works">Как это работает</a></li>
+                                    <li><a href="#rating">Рейтинг</a></li>
+                                    <li><a href="#about">О нас</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-column">
+                                <h4>Ресурсы</h4>
+                                <ul>
+                                    <li><a href="#">Документация</a></li>
+                                    <li><a href="#">Блог</a></li>
+                                    <li><a href="#">Примеры решений</a></li>
+                                    <li><a href="#">База знаний</a></li>
+                                </ul>
+                            </div>
+                            <div class="nav-column">
+                                <h4>Поддержка</h4>
+                                <ul>
+                                    <li><a href="#">Помощь</a></li>
+                                    <li><a href="#">Сообщество</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Статус системы</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Контакты и подписка -->
+                        <div class="footer-actions">
+                            <div class="contact-info">
+                                <h4>Свяжитесь с нами</h4>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>support@edtech-platform.ru</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+7 (423) 123-45-67</span>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Приморский край, г. Владивосток</span>
                                 </div>
                             </div>
-                            <div class="box">
-                                <div class="team_box box_anton">
-                                    <a href="https://vk.com/aaashaaapovaaal02" target="_blank">
-                                        <div class="team_box__title">
-                                            <h3 class="name">Антон Шаповал</h3>
-                                            <h3 class="post">Типограф</h3>
-                                            <div class="line"></div>
-                                        </div>
-                                        <div class="team_box__line"></div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <div class="team_box box_cat">
-                                    <a href="https://vk.com/severrrrrrrrrrrrrrr" target="_blank">
-                                        <div class="team_box__title">
-                                            <h3 class="name">Север</h3>
-                                            <h3 class="post">Кот</h3>
-                                            <div class="line"></div>
-                                        </div>
-                                        <div class="team_box__line"></div>
-                                    </a>
-                                </div>
+
+                            <div class="newsletter">
+                                <h4>Новостная рассылка</h4>
+                                <p>Будьте в курсе новых возможностей и событий</p>
+                                <form class="newsletter-form">
+                                    <input type="email" placeholder="Ваш email" class="newsletter-input">
+                                    <button type="submit" class="newsletter-btn">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </button>
+                                </form>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section> <!-- team -->
 
-            <section class="footer" style="background-image: url(assets/images/footer/footer.jpg)">
-                <!--<div class="container">-->
-                <div class="footer-wrapper">
-                    <a href="docs/BookVentures.pdf" class="read_form read_form__footer" download>
-                        <button class="footer_btm footer_btm__pdf" id="pdf"><i class="fa-solid fa-file-arrow-down"></i>  PDF версия издания</button>
-                    </a>
+                    <!-- Разделительная линия -->
+                    <div class="footer-divider"></div>
+
+                    <!-- Нижняя часть футера -->
+                    <div class="footer-bottom">
+                        <div class="copyright">
+                            <p>&copy; 2025 EdTech Platform.</p>
+                        </div>
+                        <div class="footer-links">
+                            <a href="#">Политика конфиденциальности</a>
+                            <a href="#">Условия использования</a>
+                            <a href="#">Карта сайта</a>
+                        </div>
+                        <div class="footer-badge">
+                            <div class="badge-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <span>Сделано для развития образования</span>
+                        </div>
+                    </div>
                 </div>
-                <!--</div>-->
-            </section> <!-- footer -->
+            </footer>
+
+
         </div> <!-- scroll-container -->
     </div> <!-- wrapper -->
 </body>
