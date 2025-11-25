@@ -1941,23 +1941,6 @@ body {
     margin: 0;
 }
 
-/*!* Соединительные линии между карточками для десктопа *!*/
-/*.steps-container::before {*/
-/*    content: '';*/
-/*    position: absolute;*/
-/*    top: 40%;*/
-/*    left: 25%;*/
-/*    width: 10%;*/
-/*    height: 2px;*/
-/*    background: linear-gradient(90deg,*/
-/*    #2F80ED 0%,*/
-/*    #27AE60 33%,*/
-/*    #FF8F3D 66%,*/
-/*    #FFD166 100%*/
-/*    );*/
-/*    z-index: 1;*/
-/*}*/
-
 
 /* Альтернативный вариант с отдельными линиями между карточками */
 .step-connector {
@@ -2014,6 +1997,311 @@ body {
 }
 
 
+
+/* Стили для блока рейтинга */
+.rating {
+    padding: 100px 0;
+    background: #FFFFFF;
+}
+
+.rating__header {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 80px auto;
+}
+
+.rating-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #2F80ED;
+    border-radius: 50px;
+    background: #E6F0FF;
+    color: #2F80ED;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.rating-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1F2937;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.rating-description {
+    font-size: 1.1rem;
+    color: #4B5563;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Основной контент */
+.rating-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Левая часть - таблица рейтинга */
+.rating-table {
+    background: #F7FAFC;
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid #E5E7EB;
+}
+
+.table-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.table-icon {
+    width: 40px;
+    height: 40px;
+    background: #FFD166;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1F2937;
+    font-size: 18px;
+}
+
+.table-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin: 0;
+}
+
+/* Строки команд */
+.team-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.team-row:last-child {
+    border-bottom: none;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Иконки рангов */
+.rank-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.rank-first {
+    background: #FFD166; /* Жёлтый */
+}
+
+.rank-second {
+    background: #D1D5DB; /* Серый */
+}
+
+.rank-third {
+    background: #FF8F3D; /* Оранжевый/бронзовый */
+}
+
+.rank-other {
+    background: #2F80ED; /* Синий */
+    color: #FFFFFF;
+}
+
+/* Аватар команды */
+.team-avatar {
+    width: 50px;
+    height: 50px;
+    background: #2F80ED;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.team-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1F2937;
+    margin: 0 0 4px 0;
+}
+
+.team-members {
+    font-size: 0.9rem;
+    color: #4B5563;
+}
+
+/* Статистика команды */
+.team-stats {
+    text-align: right;
+}
+
+.team-rating {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 4px;
+}
+
+.rating-change {
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: flex-end;
+}
+
+.rating-change.positive {
+    color: #27AE60; /* Зелёный */
+}
+
+.rating-change.negative {
+    color: #EB5757; /* Красный */
+}
+
+/* Правая часть - сайдбар */
+.rating-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.stats-card {
+    background: #F7FAFC;
+    border-radius: 16px;
+    padding: 25px;
+    border: 1px solid #E5E7EB;
+}
+
+.stats-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin: 0 0 20px 0;
+}
+
+/* Прогресс-бары */
+.subject-item {
+    margin-bottom: 20px;
+}
+
+.subject-item:last-child {
+    margin-bottom: 0;
+}
+
+.subject-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.subject-name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+.subject-count {
+    font-size: 0.85rem;
+    color: #4B5563;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background: #E5E7EB;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.math-progress {
+    width: 100%;
+    background: #2F80ED; /* Синий */
+}
+
+.programming-progress {
+    width: 90%;
+    background: #27AE60; /* Зелёный */
+}
+
+.physics-progress {
+    width: 75%;
+    background: #FF8F3D; /* Оранжевый */
+}
+
+.data-progress {
+    width: 60%;
+    background: #FFD166; /* Жёлтый */
+}
+
+/* Список статистики */
+.stats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.stat-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.stat-label {
+    font-size: 0.95rem;
+    color: #4B5563;
+}
+
+.stat-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1F2937;
+}
 
 
 
@@ -2088,6 +2376,22 @@ body {
 
     .process-title {
         font-size: 2.2rem;
+    }
+
+    .rating-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .rating-table {
+        order: 1;
+    }
+
+    .rating-sidebar {
+        order: 2;
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        gap: 30px;
     }
 }
 
@@ -2335,6 +2639,41 @@ body {
         font-size: 28px;
     }
 
+    .rating {
+        padding: 60px 0;
+    }
+
+    .rating__header {
+        margin-bottom: 50px;
+    }
+
+    .rating-title {
+        font-size: 2rem;
+    }
+
+    .rating-description {
+        font-size: 1rem;
+    }
+
+    .rating-table,
+    .stats-card {
+        padding: 20px;
+    }
+
+    .team-info {
+        gap: 10px;
+    }
+
+    .team-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .team-name {
+        font-size: 1rem;
+    }
+
 }
 
 
@@ -2375,6 +2714,32 @@ body {
     .btn--large {
         width: 100%;
         max-width: 280px;
+    }
+
+    .rating-sidebar {
+        grid-template-columns: 1fr;
+    }
+
+    .team-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .team-stats {
+        text-align: left;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .rating-change {
+        justify-content: flex-start;
+    }
+
+    .rating-title {
+        font-size: 1.75rem;
     }
 
 }
