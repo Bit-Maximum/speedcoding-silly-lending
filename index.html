@@ -44,15 +44,15 @@
 
                     <!-- Кнопки авторизации для мобильной версии -->
                     <div class="nav_auth-mobile">
-                        <a href="mailto:temp@mail.com" class="auth-btn login-btn mobile-auth-btn">Войти</a>
-                        <a href="mailto:temp@mail.com" class="auth-btn register-btn mobile-auth-btn">Начать обучение</a>
+                        <a href="#" class="auth-btn login-btn">Войти</a>
+                        <a href="#" class="auth-btn register-btn">Начать обучение</a>
                     </div>
                 </nav>
 
                 <!-- Кнопки авторизации для десктопной версии -->
                 <div class="header_auth">
-                    <a href="mailto:temp@mail.com" class="auth-btn login-btn">Войти</a>
-                    <a href="mailto:temp@mail.com" class="auth-btn register-btn">Начать обучение</a>
+                    <a href="#" class="auth-btn login-btn">Войти</a>
+                    <a href="#" class="auth-btn register-btn">Начать обучение</a>
                 </div>
 
                 <button class="nav-toggle" id="nav_toggle">
@@ -61,6 +61,168 @@
             </div>
         </div>
     </header> <!-- Nav Menu-->
+
+    <!-- Модальное окно входа -->
+    <div class="modal" id="loginModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal__header">
+                <div class="modal__icon">
+                    <i class="fas fa-sign-in-alt"></i>
+                </div>
+                <h2 class="modal__title">Вход в платформу</h2>
+                <p class="modal__subtitle">Войдите в свой аккаунт чтобы продолжить обучение</p>
+            </div>
+
+            <form class="modal__form" id="loginForm">
+                <div class="form__group">
+                    <label class="form__label">Email</label>
+                    <div class="input__wrapper">
+                        <i class="fas fa-envelope input__icon"></i>
+                        <input type="email" class="form__input" placeholder="your@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label">Пароль</label>
+                    <div class="input__wrapper">
+                        <i class="fas fa-lock input__icon"></i>
+                        <input type="password" class="form__input" placeholder="Введите пароль" required>
+                        <button type="button" class="password-toggle">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form__options">
+                    <label class="checkbox__wrapper">
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkmark"></span>
+                        Запомнить меня
+                    </label>
+                    <a href="#" class="form__link">Забыли пароль?</a>
+                </div>
+
+                <button type="submit" class="form__submit">
+                    <span class="submit__text">Войти в аккаунт</span>
+                    <div class="submit__loader">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                </button>
+            </form>
+
+            <div class="modal__footer">
+                <p>Ещё нет аккаунта? <a href="#" class="modal__link" data-modal="register">Зарегистрироваться</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно регистрации -->
+    <div class="modal" id="registerModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal__header">
+                <div class="modal__icon">
+                    <i class="fas fa-user-plus"></i>
+                </div>
+                <h2 class="modal__title">Присоединиться к платформе</h2>
+                <p class="modal__subtitle">Создайте аккаунт чтобы начать обучение</p>
+            </div>
+
+            <form class="modal__form" id="registerForm">
+                <div class="form__row">
+                    <div class="form__group">
+                        <label class="form__label">Имя</label>
+                        <div class="input__wrapper">
+                            <i class="fas fa-user input__icon"></i>
+                            <input type="text" class="form__input" placeholder="Ваше имя" required>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">Фамилия</label>
+                        <div class="input__wrapper">
+                            <i class="fas fa-user input__icon"></i>
+                            <input type="text" class="form__input" placeholder="Ваша фамилия" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label">Email</label>
+                    <div class="input__wrapper">
+                        <i class="fas fa-envelope input__icon"></i>
+                        <input type="email" class="form__input" placeholder="your@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form__group">
+                    <label class="form__label">Роль</label>
+                    <div class="select__wrapper">
+                        <i class="fas fa-graduation-cap input__icon"></i>
+                        <select class="form__select" required>
+                            <option value="">Выберите роль</option>
+                            <option value="student">Ученик</option>
+                            <option value="teacher">Учитель</option>
+                            <option value="mentor">Наставник</option>
+                            <option value="school">Представитель школы</option>
+                        </select>
+                        <i class="fas fa-chevron-down select__arrow"></i>
+                    </div>
+                </div>
+
+                <div class="form__row">
+                    <div class="form__group">
+                        <label class="form__label">Пароль</label>
+                        <div class="input__wrapper">
+                            <i class="fas fa-lock input__icon"></i>
+                            <input type="password" class="form__input" placeholder="Придумайте пароль" required>
+                            <button type="button" class="password-toggle">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label class="form__label">Подтверждение</label>
+                        <div class="input__wrapper">
+                            <i class="fas fa-lock input__icon"></i>
+                            <input type="password" class="form__input" placeholder="Повторите пароль" required>
+                            <button type="button" class="password-toggle">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form__options">
+                    <label class="checkbox__wrapper">
+                        <input type="checkbox" class="checkbox" required>
+                        <span class="checkmark"></span>
+                        <a href="#" class="form__link">Я согласен с условиями использования и политикой конфиденциальности</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="form__submit">
+                    <span class="submit__text">Создать аккаунт</span>
+                    <div class="submit__loader">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                </button>
+            </form>
+
+            <div class="modal__footer">
+                <p>Уже есть аккаунт? <a href="#" class="modal__link" data-modal="login">Войти</a></p>
+            </div>
+        </div>
+    </div>
+
 
     <div class="wrapper">
         <div class="scroll-container">
@@ -89,8 +251,8 @@
 
                             <!-- Кнопки -->
                             <div class="hero__actions">
-                                <button class="btn btn--primary">Начать обучение →</button>
-                                <button class="btn btn--secondary">Смотреть демо</button>
+                                <a href="#" class="btn btn--primary">Начать обучение →</a>
+                                <a href="#" data-scroll="#rating" class="btn btn--secondary">Смотреть демо</a>
                             </div>
 
                             <!-- Блок статистики -->
@@ -288,7 +450,7 @@
 
                     <!-- Кнопка -->
                     <div class="process-actions">
-                        <button class="btn btn--primary btn--large">Начать прямо сейчас</button>
+                        <a href="#" class="btn btn--primary btn--large">Начать прямо сейчас</a>
                     </div>
                 </div>
             </section>
@@ -616,8 +778,8 @@
                             <p>Станьте частью сообщества, которое формирует новое поколение инженеров и IT-специалистов</p>
                         </div>
                         <div class="cta-actions">
-                            <button class="btn btn--primary">Начать обучение</button>
-                            <button class="btn btn--secondary">Узнать больше</button>
+                            <a href="#" class="btn btn--primary">Подключить школу</a>
+                            <a href="#" class="btn btn--secondary">Узнать больше</a>
                         </div>
                     </div>
                 </div>
@@ -736,6 +898,9 @@
                     </div>
                 </div>
             </footer>
+
+
+
 
 
         </div> <!-- scroll-container -->

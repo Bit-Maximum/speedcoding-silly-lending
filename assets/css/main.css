@@ -2898,6 +2898,398 @@ body {
     color: #9CA3AF;
 }
 
+
+/* Дополнительные стили для иконок */
+.fab, .fas {
+    font-size: 1.1rem;
+}
+
+/* Стили для ссылок, которые выглядят как кнопки */
+.btn,
+.auth-btn {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Для десктопных кнопок авторизации */
+.header_auth .auth-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+/* Для мобильных кнопок авторизации */
+.nav_auth-mobile .mobile-auth-btn {
+    width: 100%;
+    margin: 8px 0;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Убедимся, что все кнопки-ссылки имеют правильное поведение */
+a.btn,
+a.auth-btn {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.btn:hover,
+a.auth-btn:hover {
+    text-decoration: none;
+}
+
+
+/* Стили для модальных окон */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 41, 55, 0.8);
+    backdrop-filter: blur(8px);
+}
+
+.modal__content {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    border: 1px solid #E5E7EB;
+    animation: modalSlideIn 0.3s ease;
+}
+
+#registerModal .modal__content {
+    max-width: 600px;
+}
+
+.modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #F7FAFC;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4B5563;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.modal__close:hover {
+    background: #E6F0FF;
+    color: #2F80ED;
+    transform: rotate(90deg);
+}
+
+.modal__header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.modal__icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #2F80ED, #1C5FD3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    color: #FFFFFF;
+    font-size: 32px;
+    box-shadow: 0 10px 25px rgba(47, 128, 237, 0.3);
+}
+
+.modal__title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1F2937;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.modal__subtitle {
+    font-size: 1rem;
+    color: #4B5563;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Формы */
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form__label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1F2937;
+}
+
+.input__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input__icon {
+    position: absolute;
+    left: 15px;
+    color: #4B5563;
+    font-size: 16px;
+    z-index: 2;
+}
+
+.form__input,
+.form__select {
+    width: 100%;
+    padding: 14px 15px 14px 45px;
+    border: 2px solid #E5E7EB;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.form__input:focus,
+.form__select:focus {
+    outline: none;
+    border-color: #2F80ED;
+    box-shadow: 0 0 0 3px rgba(47, 128, 237, 0.1);
+}
+
+.select__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form__select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.select__arrow {
+    position: absolute;
+    right: 15px;
+    color: #4B5563;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    background: none;
+    border: none;
+    color: #4B5563;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.password-toggle:hover {
+    color: #2F80ED;
+}
+
+/* Чекбоксы и опции */
+.form__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkbox__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #4B5563;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkmark {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #D1D5DB;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.checkbox:checked + .checkmark {
+    background: #2F80ED;
+    border-color: #2F80ED;
+}
+
+.checkbox:checked + .checkmark::after {
+    content: '✓';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form__link {
+    color: #2F80ED;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.form__link:hover {
+    color: #1C5FD3;
+}
+
+/* Кнопка отправки */
+.form__submit {
+    background: linear-gradient(135deg, #2F80ED, #1C5FD3);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.form__submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(47, 128, 237, 0.4);
+}
+
+.form__submit:active {
+    transform: translateY(0);
+}
+
+.form__submit.loading {
+    pointer-events: none;
+}
+
+.submit__loader {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__submit.loading .submit__text {
+    opacity: 0;
+}
+
+.form__submit.loading .submit__loader {
+    display: block;
+}
+
+/* Футер модалки */
+.modal__footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #E5E7EB;
+}
+
+.modal__footer p {
+    color: #4B5563;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.modal__link {
+    color: #2F80ED;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.modal__link:hover {
+    color: #1C5FD3;
+}
+
+/* Анимации */
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 /* Адаптивность */
 @media (max-width: 1024px) {
     .container__nav {
@@ -3383,6 +3775,26 @@ body {
         gap: 10px;
     }
 
+    .modal__content {
+        padding: 30px 25px;
+        margin: 10px;
+    }
+
+    .modal__title {
+        font-size: 1.6rem;
+    }
+
+    .form__row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .form__options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
 }
 
 
@@ -3491,55 +3903,18 @@ body {
         text-align: center;
     }
 
-}
+    .modal__content {
+        padding: 25px 20px;
+    }
 
-/* Дополнительные стили для иконок */
-.fab, .fas {
-    font-size: 1.1rem;
-}
+    .modal__title {
+        font-size: 1.4rem;
+    }
 
-/* Стили для ссылок, которые выглядят как кнопки */
-.btn,
-.auth-btn {
-    text-decoration: none;
-    display: inline-block;
-    text-align: center;
-    box-sizing: border-box;
-}
+    .modal__icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
 
-/* Для десктопных кнопок авторизации */
-.header_auth .auth-btn {
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    white-space: nowrap;
-}
-
-/* Для мобильных кнопок авторизации */
-.nav_auth-mobile .mobile-auth-btn {
-    width: 100%;
-    margin: 8px 0;
-    padding: 14px;
-    font-size: 16px;
-    border-radius: 8px;
-    font-weight: 600;
-    white-space: nowrap;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-/* Убедимся, что все кнопки-ссылки имеют правильное поведение */
-a.btn,
-a.auth-btn {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-a.btn:hover,
-a.auth-btn:hover {
-    text-decoration: none;
 }
